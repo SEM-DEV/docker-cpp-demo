@@ -22,4 +22,4 @@ docker run -it --rm semdevinc/cpp-demo
 
 ## Source Code
 
-https://github.com/SEM-DEV-Inc/cpp-demo
+[https://github.com/SEM-DEV-Inc/cpp-demo](https://github.com/SEM-DEV/docker-cpp-demo)
