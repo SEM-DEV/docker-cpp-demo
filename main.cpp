@@ -2,7 +2,7 @@
 #include <thread>
 
 int main() {
-    std::cout << "Hello from GPULab!" << std::endl;
+    std::cout << "Hello!" << std::endl;
 
     std::cout << "Number of CPU cores: "
               << std::thread::hardware_concurrency()
