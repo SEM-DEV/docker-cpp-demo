@@ -1,38 +1,57 @@
 # C++ Demo
 
-A minimal Docker image demonstrating how to compile and run a simple C++ program.
+A minimal Docker image demonstrating how to compile and run a simple C++ program inside an Ubuntu-based container.
 
-## Build it locally
+## Features
+
+- Ubuntu 22.04 environment
+- GNU C++ compiler (`g++`)
+- Simple C++ example
+- Displays the number of available CPU cores
+
+## Build locally
 
 ```bash
 docker build -t cpp-demo .
 ```
-## Run it locally
+
+## Run locally
 
 ```bash
 docker run --rm cpp-demo
 ```
-## Expected output:
 
-```bash
+## Expected output
+
+```text
 Hello!
 Number of CPU cores: 4
 ```
 
-## Pull
+> The reported number of CPU cores depends on your system and Docker configuration.
+
+## Pull from Docker Hub
 
 ```bash
 docker pull semdevinc/cpp-demo
 ```
 
-## Run
+## Run the published image
 
 ```bash
-docker run -it --rm semdevinc/cpp-demo
+docker run --rm semdevinc/cpp-demo
 ```
 
-## Files
+## Repository structure
 
-- Dockerfile
-- main.cpp
-- run.sh
+- `Dockerfile` – Builds the Docker image.
+- `main.cpp` – Simple C++ example application.
+- `run.sh` – Compiles and executes the application.
+
+## Docker Hub
+
+https://hub.docker.com/r/semdevinc/cpp-demo
+
+## License
+
+MIT
